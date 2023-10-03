@@ -1,0 +1,11 @@
+cat_names = []
+while True:
+    print('Enter the name of cat ' + str(len(cat_names) + 1) +
+          ' (Or hit enter without entering anything to stop.):')
+    cat = input()
+    if cat == '':
+        break
+    cat_names = cat_names + [cat] 
+print('The cats\' names are:')
+for cat in cat_names:
+    print(' ' + cat)
